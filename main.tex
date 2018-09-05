@@ -2,9 +2,36 @@
   \usepackage[utf8]{inputenc}
   \usepackage{xcolor}
   \usepackage{amsmath}
+  \usepackage{graphicx}
+  \usepackage{subcaption}
+  \usepackage{float}
+  \usepackage{xargs}
   
   \newcommand{\term}[1]{\colorbox{pink}{#1}}
   \newcommand{\warn}[1]{\colorbox{yellow}{#1}}
+  \newcommandx*\pic[4][4=default]{
+    \begin{figure}[H]
+      \centering
+      \includegraphics[{#1}]{{#2}}
+      \caption{{#3}}
+      \label{#4}
+    \end{figure}
+    }
+\newcommandx*{\picsPreview}[6][6=default]{
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.5\textwidth}
+            \includegraphics[width=\textwidth]{#1}
+            \caption{#2}
+    \end{subfigure}%
+    \begin{subfigure}[b]{0.5\textwidth}
+            \includegraphics[width=\textwidth]{#3}
+            \caption{#4}
+    \end{subfigure}
+    \caption{#5}
+    \label{#6}
+\end{figure}
+}
   
 
   \title{Latvijas Universitāte}
@@ -22,7 +49,11 @@
   \include{data_processing}
   
 
-
-
+  % \pic{width=7cm}{src}{Caption}
+  % \picsPreview
+  % {img/svd_vect/ab_mod.png}{трехмерная поверхность}
+  % {img/svd_vect/ab_mod_marg.png}{линии уровня}
+  % {$\tilde{F}(a,b) = |100 - (ab)|$ на интервале $a \in [-17, 17]$ и $b \in [-17,
+  % 17]$.}
   \end{document}
   
