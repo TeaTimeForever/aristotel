@@ -1,0 +1,36 @@
+\section{Varbutiskie algoritmi}
+Andris Ambainis \\
+Raina Bulvaris 19, 319 kab.\\
+konsultācija piektdiena 14:30 -- 16:30 \\
+\newline
+grāmatas:
+\begin{enumerate}
+  \item M.Mitzenmacher, E.Upfal - Probability and Computing
+  \item piezīmes e-stūdijās
+\end{enumerate}
+
+Atzīme: 40\% eksāmens + 60\% mājas darbi
+
+\subsection{Piemērs varbutiskajam algoritmam}
+\subsubsection{Polinomu vienādiibas pārbaude}
+Dots: 2 polinomi $f(x)$ un $g(x)$ ar pakāpi $\le n$
+$$ f(x) = (x^2 + 3)(x-4)+7 $$
+$$ g(x) = (x+2) (x-3) (x+4) $$
+
+\begin{enumerate}
+  \item Pirmais veids: atrisināt polinomus vienkaršakus formus
+  $$ f(x) = x^3 - 4x^2 + 3x -5 $$
+  $$ g(x) = x^3 + 3x^2 - 10x -24 $$
+
+  \item Varbutiskai algoritms
+  \begin{itemize}
+    \item izvelas $x \in \{1, ... 10n\}$
+    \item izrekina $f(x), g(x)$
+    \item ja $f(x) \ne g(x) \rightarrow $ seicina ka $f \ne g$
+    \item ja $f(x) = g(x) \rightarrow $ secina ka $ f = g$
+  \end{itemize}
+  \warn{Algoritms var izdot atbildi ka $f = g$ arī tad, ja $f(x) \ne g(x)$.
+  Jautājums -- cik bieži tas notiek?}
+  
+\end{enumerate}
+
