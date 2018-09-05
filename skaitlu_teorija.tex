@@ -1,3 +1,28 @@
 \section{Skaitlu teorija}
 Smotrovs Jurijs \\
 
+\subsubsection{Abstraktā algebra}
+\warn{Algebraiska struktura} -- kopa ar tajā definētām darbībam (piem. $\langle K, +, * \rangle$).
+Darbības apraksts -- ir \warn{aksiomas}. Tas ko var izvest no aksiomam -- ir \warn{teorēmas}. \\
+
+$\langle K, \circ \rangle$
+\begin{itemize}
+  \item G1)  $\forall x,y \in K$ $\exists! / z \in K (x \circ y = z)$
+  \item G2) $\forall x, y, z \in K (x \circ (y \circ z) = (x \circ y) \circ z)$ -- \warn{associācija}
+  \item Ja izpildas G1 un G2 -- tadu kopu sauc par \term{pusgrupu}
+  \item G3) $\exists n \in K \forall x \in K (n \circ x = x \circ n = x)$ -- \warn{neitrālais elements}
+  \item ja izpildas G1, G2, G3 -- to sauc par \term{monoīdu}
+  \item G4) $\forall x \in K$  $\exists d_x \in K (x \circ d_x = d_x \circ x = n)$
+  \item Ja izpildas G1, G2, G3 un G4 -- to sauc par \term{grupu}
+  \item G5) $\forall x, y \in K $ $(x \circ y = y \circ x)$ \warn{komutatīvitāte}
+  \item Ja izpildas G1 - G5 -- to sauc par \term{Ābela grupu}, vai \term{komutatīvu} grupu.
+\end{itemize}
+
+\subsubsection{Gredzens}
+Gredzens -- ir struktura $\langle G, +, * \rangle$ kur izpildas sekojošas īpašības:
+\begin{enumerate}
+  \item $\langle G, + \rangle$ ir Ābela grupa
+  \item $\langle G, * \rangle$ ir pusgruppa
+  \item $\forall x,y, z \in G $ $(x * (y + z) = x * y + x * z)$
+  \item $\forall x, y, z \in G$ $( (y + z) * x = y * x + z * x)$
+\end{enumerate}
