@@ -1,0 +1,63 @@
+\section{Datoru tikli I}
+Guntars Bārzdińš \\
+guntis@latnet.lv \\
+331 kab.
+
+\begin{center}
+  \begin{tabular}{ l | l | l }
+    Starpprocexxoru attalums & Location type  & Network type\\
+  \hline
+  0.1m   & Board \\
+  1m     & System   & LAN\\
+  10m    & Room     & LAN\\
+  100m   & Building & LAN (Local Area Network)\\
+  1000m  & Campus   & MAN\\
+  10km   & City     & MAN (Metropolitan Area Netpwork)\\
+  100km  & Country  & WAN (Wide Area Netpwork)\\
+  1000km & Continent& WAN \\
+  10000km& Planet   & WAN \\
+  \end{tabular}
+\end{center}
+
+\term{LAN} -- Local Area Network.
+Atrumi: (1Gbps, 10Gbps, 100Gbps).
+Attalums: vitais paris - 200m, optiskais -- 40-70km.
+\\
+
+\term{MAN} -- Metropolitan Area Netpwork.
+Galvena atškirība no LAN: ātrums, \underline{kam pieder}, izmaksas.
+
+
+Datoru tikls sastāv no: dators un marsrutezators (router) + sakaru kanāli.
+Sakaru kanālu tipi:
+\begin{enumerate}
+  \item point-to-point
+  \item broadcast
+\end{enumerate}
+
+Tīklu topologijas. (Klasiskas ir zvaignze un rinkins)
+
+ISO -- International Standarts Organisation
+
+OSI - Open System Interconnection
+
+\begin{center}
+  \begin{tabular}{ r | l }
+  \hline
+  Application & Lietojuma līmenis\\
+  Presentation& Datu reprezentācijas līmenis (kura formata jpeg/mp3/txt etc\\
+  Session     & Sessijas līmenis   \\
+  Transport   & Transporta līmenis -- nočeko ka visas paketas 
+  kuram vajadzeja nosutities atnaca. Un parbauda ka fails bija tieks parsutits bez kludam.\\
+  Network     & Tīkla līmenis (point-to-point) uzradas adresācija.
+  Kam un ko atsutit. Vienīgais liīmenis kur nav iluzijas par to 
+  ka connection ir peer-to-peer. Tas ir layers kur tiesi sazinas
+   2 datori. \\
+  DataLink    & Kanala līmenis (griež datus paketos), ar check summam\\
+  Physical    & Fiziskais līmenis (biti) \\
+  \end{tabular}
+\end{center}
+
+\term{SAP} -- Service Access Point, sanem datu paketes un suta talak vai pieprasa datus velreiz.
+Nodrosina sakaru starp layeriem.
+
