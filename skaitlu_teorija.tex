@@ -33,5 +33,83 @@ $$\underbrace{1 + 1 + 1 + ... + 1 = 0}_\text{m}$$
 \textbf{apgriežamo elementu kopa}: $U(G)$\\
 Teorēma: $\langle U(G), * \rangle$ ir grupa.
 
+\subsection{Lauks}
+$\langle G, +, * \rangle$  -- komutatīvais gredzens ar vieninieku. \\
+$G^* = G /\ \{0\}$\\
+G4' -- $\forall x \in G^*$\\
+Piemeri
+\begin{enumerate}
+  \item $\langle N, +, *\rangle$ - nav
+  \item $\langle Z, +, *\rangle$ - kom. gredzens ar 1
+  \item $\langle Q, +, *\rangle$ - lauks
+  \item $\langle R, +, *\rangle$ - lauks
+  \item $\langle C, +, *\rangle$ - lauks
+\end{enumerate}
+
+\term{Def} Par skaitla $\boldsymbol{a}$ \warn{atlikumu} klasi pēc modula
+ $\boldsymbol{m}$ sauc visu to veselo skaitlu kopu, kuri ,
+ dalot ar $\boldsymbol{m}$, dod atlikumu $\boldsymbol{a}$.
+
+  Piemers. Pēc modula \term{7}:
+  \begin{itemize}
+    \item $\bar{0} = \{..., -14, -7, 0, 14, 21, 28, 35\}$
+    \item $\bar{1} = \{..., -20, -13, -6, 1, 8, 15 ...\}$
+    \item $\bar{18} = \bar{4} = \bar{11} = \{..., -10, -3, 4, 11, 18, 25\}$
+    \item $\bar{2} + \bar{3} = \bar{5}$ -- panemot kopu kur visi atlikumi 
+    ir 2 un saskaitit ar kopu kur visi atlikumi ir 3, tad dabusim kopu,
+    kur visi atlikumi ir 5.
+    
+    \item $\bar{2} * \bar{3} = \bar{6}$ -- panemot kopu kur visi atlikumi
+    ir 2 un reizinat to ar kopu kur visi atlikumi ir 3, tad dabusim kopu,
+    kur visi atlikumi ir 6.
+    
+    \item $\bar{4} + \bar{6} = \bar{3}$  
+    ($4 + 6 = 10; 10 / 7 \rightarrow modulis = 3$)
+    
+    \item $\bar{4} * \bar{6} = \bar{3}$ 
+    ($4 + 6 = 24; 24 / 7 \rightarrow modulis = 3$)
+  \end{itemize}
+
+  \term{Def} Saka ka veseli skaitli $a$ un $b$ ir kongruenti, pec modula 
+  $\boldsymbol{m}$, ja skaitlis $a-b$ dalās ar $\boldsymbol{m}$. To Pieraksta 
+  $ a \equiv b (mod \ m)$
+
+  $18 \equiv 4 (mod \ 7)$
+\newline
+  $Z_m$ -- atlikumi pec modula $\boldsymbol{m}$ \\
+  $Z_m = \{ \bar{0}, \bar{1}, \bar{2} ...\bar{(m-1)}\}$ \\
+
+
+  $\langle Z_m, +, * \rangle$ -- komutatīvais gredzens ar 1\\
+  neitralais elements (+)  $\bar{0} \rightarrow\bar{0} + x = x$ \\
+  neitralais elements (*)  $\bar{1} \rightarrow\bar{1} * x = x$ \\
+
+Var pieradit ka nav 0 dalitāju.
+$$a * b = 0$$
+$$a^{-1}* a * b = a^{-1}*0$$
+$$ 1*b = 0$$
+$$ b = 0  \  \rightarrow pretruna$$ -- 
+
+
+\begin{itemize}
+  \item $mod \ 7: \{ \bar{0}, \bar{1}, \bar{3}, \bar{4}, \bar{5}, \bar{6}\}$
+  \item $mod \ 6: \{ \bar{0}, \bar{1}, \bar{3}, \bar{4}, \bar{5} \}$ \\
+  $\bar{2} * \bar{3} =_6 \bar{0} $ 
+\end{itemize}
+$Z_p = \{ \bar{0}, \bar{1}, \bar{2}, ..., \bar{p-1} \} - 2, 3, 5, 7, 11, 13 (primes) $ \\
+$\forall a \ne 0 \ \exists \ d(\bar{a} * \bar{d} = \bar{1})$ \\
+$\bar{0}, \bar{1}, \bar{2}, ..., \bar{p-1}$ \\
+$\bar{0} * \bar{a}, \bar{1} * \bar{a}, \bar{2} * \bar{a}, ..., \bar{p-1} * \bar{a}$ \\
+$0*a, 1*a, 2*a, ..., (p-1)*a$
+
+Pienemsim pretejo: $k*a \equiv l * a (mod \ p), k \ne l , 0 \le k, l \le p-1 )$ \\
+$(k -l)*a \equiv 0 (mod \ p)$ \\
+$(k - l) * a$ dalas ar $p$ \\
+$k -l $  dalas ar $p$ vai $a$ dalas ar p 
+
+//  congruences, atlikumu kopu ipasibas
+
+
+
 
 

@@ -61,3 +61,74 @@ OSI - Open System Interconnection
 \term{SAP} -- Service Access Point, sanem datu paketes un suta talak vai pieprasa datus velreiz.
 Nodrosina sakaru starp layeriem.
 
+\subsection{Majas darbs I}
+\subsubsection{Fourier Analysis}
+name: kaRina \\
+R in ascii 01010010\\
+
+$$f(t) = \frac{c}{2} + 
+    \sum_{n=1}^{\infty}a_n cos(\frac{2 \pi n t}{T}) + 
+    \sum_{n=1}^{\infty}b_n sin(\frac{2 \pi n t}{T})$$,
+    where
+
+$a_n=\frac{2}{T} \int_0^T f(t) cos (\frac{2 \pi n t}{T})dt $ and
+$b_n=\frac{2}{T} \int_0^T f(t) sin (\frac{2 \pi n t}{T})dt $
+$$c = \frac{3}{4}$$
+
+$$a_n = \frac{1}{\pi n } \bigg[ 
+  sin(\frac{2 \pi n}{4}) -
+  sin(\frac{\pi n}{4})   +
+  sin(\frac{4 \pi n}{4}) -
+  sin(\frac{3 \pi n}{4}) +
+  sin(\frac{7 \pi n}{4}) -
+  sin(\frac{6 \pi n}{4})
+ \bigg]
+ $$
+
+ $$b_n = \frac{1}{\pi n } \bigg[ 
+  cos(\frac{\pi n}{4}) -
+  cos(\frac{2 \pi n}{4})   +
+  cos(\frac{3 \pi n}{4}) -
+  cos(\frac{4 \pi n}{4}) +
+  cos(\frac{6 \pi n}{4}) -
+  cos(\frac{7 \pi n}{4})
+ \bigg]
+ $$
+
+ \begin{center}
+  \begin{tabular}{ c | c | c  }
+    harmonika ($n$) & $a_n$ & $b_n$\\
+  \hline
+  1 & 
+    $\frac{4 - 3 \sqrt{2}}{2 \pi}$ &
+    $\frac{2 - \sqrt{2}}{2 \pi} $ \\
+  2 & 
+    $-\frac{1}{2\pi}$ &
+    $-\frac{1}{2\pi}$ \\
+  3 & 
+    $\frac{-4 - 3 \sqrt{2}}{6 \pi}$ &
+    $\frac{2 + \sqrt{2}}{6 \pi}$ \\
+  4 &
+    0 &
+    $-\frac{1}{2 \pi}$ \\
+  5 &
+    $\frac{4 + 3 \sqrt{2}}{10 \pi}$ &
+    $\frac{2 + \sqrt{2}}{10 \pi}$ \\
+  6 &
+    $\frac{1}{6 \pi}$ &
+    $-\frac{1}{6 \pi}$ \\
+  7 &
+    $\frac{3 \sqrt{2} - 4}{14 \pi}$ &
+    $ \frac{2 - \sqrt{2}}{14 \pi} $ \\
+  8 & 0 & 0\\
+  9 &
+    $\frac{4 - 3 \sqrt{2}}{18 \pi}$ &
+    $\frac{2 - \sqrt{2}}{18 \pi} $ \\
+  10&
+    $ -\frac{1}{10 \pi}$ &
+    $ -\frac{1}{10 \pi}$ \\
+  \end{tabular}
+\end{center}
+
+
+
