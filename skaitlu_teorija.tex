@@ -107,7 +107,83 @@ $(k -l)*a \equiv 0 (mod \ p)$ \\
 $(k - l) * a$ dalas ar $p$ \\
 $k -l $  dalas ar $p$ vai $a$ dalas ar p 
 
-//  congruences, atlikumu kopu ipasibas
+$\bar{3}^{-1} = \bar{5}$ -- uz kadu atlikuma kopu vajag reizinat $\bar{3}$ lai atlikums butu 1.
+
+  % congruences, atlikumu kopu ipasibas
+
+\term{Veseluma apgabals} -- komutatīvs gredzens ar vieninieku bez nulles dalitājiem.
+
+$R[x], +, *$ -- polinomu kopa. sastav no skaitliem, mainigiem, un operatoriem ($skaitli, x, +, *, -$), piemers: $a_nx^n+a_{n-1}x^{n-1}+...+ a_1x + a_0$\\
+$2*Z$-- paru skaitlu kopa, nav veseluma apgabals(jo nav vieninieku), bet ir gredzens. \\
+
+\term{Dalamības attiecība}
+$$a \ dala \ b $$
+$$b \ dalas \ ar \ a$$, 
+apzime ar $a | b$ vai $b \vdots a$ tad ja $\exists c (a * c = b)$. \\
+Piemers: $21 \vdots 3 = 3 | 21$ \\
+
+Pienemsim ka visi elementi ir no veseluma apgabala.\\
+\begin{enumerate}
+  \item $a | a $ - refleksīva ($a * 1 = a$)
+  \item $a | b \wedge b | c => a | c $ (transitīva)
+  \item $a | b \wedge a | c => a | (b+c)$
+  \item $a | b => \forall c: [a | (b * c)]$
+  \item $ a | b_1 \wedge a | b_2 \wedge ... \wedge a | b_k =>
+    \forall c_1, c_2, ..., c_k: [a | c_1b_1 + c_2b_2 + ... + c_k b_k]$
+  \item $a \in U(V) <=> \forall b (a |b)$ \term{???}
+\end{enumerate}
+
+
+\term{Elementu asociatība}
+
+
+\begin{itemize}
+  \item $a \ ir \ asociets \ ar \ b <=> a | b \wedge b | a$
+  un to apzime $a \sim b$.  \\
+  Polinomu gadijumā: 
+  $$P(x) | Q(x) \wedge Q(x) | P(x) <=> \exists \alpha \in L^* (P(x) = \alpha * Q(x))$$
+  $\alpha$ - parasti izvēlas taā lai koef. pie lielākas $x$ pakāpes ir 1.
+
+  \item $a \sim a $ (refleksīva)
+  \item $a \sim b <=> b \sim a $ (simetriska)
+  \item $a \sim b \wedge b \sim c => a \sim c$ (transitīva)
+  \item $a \sim b <=> \exists u \in U(V): (a = b * u)$
+\end{itemize}
+
+Saka ka $d$ ir $a$ un $b$ lielākais kopīgais dalitājs \warn{(LKD)} ja
+\begin{itemize}
+  \item $d | a$
+  \item $d | b$
+  \item $\forall u: (u | a \wedge u | b => u | d)$
+\end{itemize}
+$LKD(21, 35)=7$
+
+Saka ka $m$ ir $a$ un $b$ mazākais kopīgais dalamais \warn{(MKD)} ja
+\begin{itemize}
+  \item $a | m$
+  \item $b | m$
+  \item $\forall u: (a | v \wedge b | v => m | v)$
+\end{itemize}
+
+Secinajumi
+
+\begin{itemize}
+  \item $d_1 \sim LKD(a, b) \wedge d_2 \sim LKD (a, b) => d_1 \sim d_2$
+  \item $LKD (a, a) \sim a$
+  \item $LKD (a, 0) \sim 0$
+  \item $LKD (a, b) \sim LKD( a, b + a * c) $ 
+  \item $LKD(a, LKD(b, c)) = LKD(LKD(a, b), c)$
+  \item $LKD(a_1, a_2, ..., a_n)$
+  \item $LKD(a, b) * MKD(a, b) = a * b$
+  \item $LKD (a + b, MKD(a, b))= LKD(a,b)$
+\end{itemize}
+
+\term{Pirmējs (prime) elements}: tāds $p$, ka $p | ab => p|a \vee p | b$. \\
+\term{Nereducejams elements (irreducable)} -- tads $p$, ka $p = u * w => u \in U(V) \vee w \in U(V)$ (U(V) - apgriezamie elementi)
+Katrs pirmējs elements ir nereducejams.
+
+\subsection{Majas darbs}
+
 
 
 
